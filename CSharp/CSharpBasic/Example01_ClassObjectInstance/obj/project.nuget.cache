@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "D9de5LvrkvBODUd4ZANhwMYMeEPkh5nnWSaM5VVsxmwXMfTV8meoxI4Jav1o422vEcvJmRbNmKMi+ZDzJM3yGg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\User\\Documents\\GitHub\\UnityEngineBasic_Sat2\\CSharp\\CSharpBasic\\Example01_ClassObjectInstance\\Example01_ClassObjectInstance.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\User\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.13\\microsoft.netcore.app.host.win-x64.5.0.13.nupkg.sha512"
+  ],
+  "logs": []
+}

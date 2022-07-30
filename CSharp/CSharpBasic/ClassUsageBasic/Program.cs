@@ -9,6 +9,23 @@ namespace ClassUsageBasic
             Console.WriteLine(new SwordMan().lv);
             SwordMan swordMan = new SwordMan(); // new 키워드 : (참조형식에 대해서) 힙영역에 동적할당하는 키워드
             swordMan.SayName(); // .연산자 : 멤버 접근 연산자
+
+            int a = 3;
+            Test(a);
+            Console.WriteLine(a);
+
+            Test(swordMan);
+            Console.WriteLine(swordMan.lv);
+        }
+
+        static void Test(SwordMan swordMan)
+        {
+            swordMan.lv = 5;
+        }
+
+        static void Test(int index)
+        {
+            index = 5;
         }
     }
 
@@ -35,7 +52,7 @@ namespace ClassUsageBasic
         // 생성자와 소멸자도 멤버함수
 
         // 생성자
-        // 객체를 힙영역에 할당하는 함수
+        // 객체를 생성하는 함수
         public SwordMan()
         {
 
