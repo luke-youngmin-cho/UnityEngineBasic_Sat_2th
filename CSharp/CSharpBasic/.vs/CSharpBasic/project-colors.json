@@ -25,7 +25,57 @@
       "ProjectGuid": "dee1df6e-b51f-47f7-bfd1-224974f0c5f9",
       "DisplayName": "ClassUsageBasic",
       "ColorIndex": 3
+    },
+    "f9699b96-282e-43fb-ae07-4f6851926ba6": {
+      "ProjectGuid": "f9699b96-282e-43fb-ae07-4f6851926ba6",
+      "DisplayName": "Example01_ClassObjectInstance",
+      "ColorIndex": 4
+    },
+    "8673fe95-7b9b-4f13-a2b3-9aed65640796": {
+      "ProjectGuid": "8673fe95-7b9b-4f13-a2b3-9aed65640796",
+      "DisplayName": "Statement_If",
+      "ColorIndex": 5
+    },
+    "0e5615e7-8ba6-4ad6-bd44-84cbbdfe60e0": {
+      "ProjectGuid": "0e5615e7-8ba6-4ad6-bd44-84cbbdfe60e0",
+      "DisplayName": "Operators",
+      "ColorIndex": 6
+    },
+    "051e48b1-2160-4f8a-b53e-bd8fd3c6ce16": {
+      "ProjectGuid": "051e48b1-2160-4f8a-b53e-bd8fd3c6ce16",
+      "DisplayName": "Array",
+      "ColorIndex": 7
+    },
+    "d308c8bb-1d90-4861-ba42-bd83b53e185c": {
+      "ProjectGuid": "d308c8bb-1d90-4861-ba42-bd83b53e185c",
+      "DisplayName": "Array2Dimension",
+      "ColorIndex": 8
+    },
+    "b810aac8-dfb5-4c41-8a9e-9ff03738c0fe": {
+      "ProjectGuid": "b810aac8-dfb5-4c41-8a9e-9ff03738c0fe",
+      "DisplayName": "Statement_Loops",
+      "ColorIndex": 9
+    },
+    "3112fbf3-8bdb-432d-be29-f85a8ba52fe1": {
+      "ProjectGuid": "3112fbf3-8bdb-432d-be29-f85a8ba52fe1",
+      "DisplayName": "Statement_SwitchCase",
+      "ColorIndex": 10
+    },
+    "bf1b5fcd-fe49-48a7-9c67-344016edc348": {
+      "ProjectGuid": "bf1b5fcd-fe49-48a7-9c67-344016edc348",
+      "DisplayName": "Structure",
+      "ColorIndex": 11
+    },
+    "84d81d08-9da8-4062-9d85-8535f04579e8": {
+      "ProjectGuid": "84d81d08-9da8-4062-9d85-8535f04579e8",
+      "DisplayName": "Example02_HorseRacing",
+      "ColorIndex": 12
+    },
+    "f40159d3-f903-4c26-ad8e-54c987fe21b6": {
+      "ProjectGuid": "f40159d3-f903-4c26-ad8e-54c987fe21b6",
+      "DisplayName": "ClassInheritanceAndPolymorphism",
+      "ColorIndex": 13
     }
   },
-  "NextColorIndex": 4
+  "NextColorIndex": 14
 }

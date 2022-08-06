@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "SNnRHssnUxyJQEEowHpsQL8WpEzqaz+S7I03HlS4g/u9LH+OJCT6Qp/2VKnCQFDti9WOPcHkYWpO1tcSY7NQ7w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\User\\Documents\\GitHub\\UnityEngineBasic_Sat2\\CSharp\\CSharpBasic\\ClassInheritanceAndPolymorphism\\ClassInheritanceAndPolymorphism.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\User\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.13\\microsoft.netcore.app.host.win-x64.5.0.13.nupkg.sha512"
+  ],
+  "logs": []
+}
