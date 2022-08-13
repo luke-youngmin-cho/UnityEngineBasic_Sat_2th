@@ -75,7 +75,32 @@
       "ProjectGuid": "f40159d3-f903-4c26-ad8e-54c987fe21b6",
       "DisplayName": "ClassInheritanceAndPolymorphism",
       "ColorIndex": 13
+    },
+    "d866655f-53be-4a38-b076-a3e3f6566259": {
+      "ProjectGuid": "d866655f-53be-4a38-b076-a3e3f6566259",
+      "DisplayName": "Collections",
+      "ColorIndex": 14
+    },
+    "6dc87933-aed3-4b24-b89a-27ab6f4a88af": {
+      "ProjectGuid": "6dc87933-aed3-4b24-b89a-27ab6f4a88af",
+      "DisplayName": "Example03_DynamicArray",
+      "ColorIndex": 15
+    },
+    "dc58a62f-ddd1-4edb-a0cf-9ea156f453c6": {
+      "ProjectGuid": "dc58a62f-ddd1-4edb-a0cf-9ea156f453c6",
+      "DisplayName": "Example04_MyLinkedList",
+      "ColorIndex": 0
+    },
+    "2b56838a-052d-4631-b0d5-746279113fd2": {
+      "ProjectGuid": "2b56838a-052d-4631-b0d5-746279113fd2",
+      "DisplayName": "Example05_MyHashtable",
+      "ColorIndex": 1
+    },
+    "db4caf84-8520-446b-8666-8cc5f0bcfaf9": {
+      "ProjectGuid": "db4caf84-8520-446b-8666-8cc5f0bcfaf9",
+      "DisplayName": "Example06_RollADice",
+      "ColorIndex": 2
     }
   },
-  "NextColorIndex": 14
+  "NextColorIndex": 3
 }
