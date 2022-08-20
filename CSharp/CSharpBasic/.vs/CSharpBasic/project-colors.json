@@ -100,7 +100,22 @@
       "ProjectGuid": "db4caf84-8520-446b-8666-8cc5f0bcfaf9",
       "DisplayName": "Example06_RollADice",
       "ColorIndex": 2
+    },
+    "f3a1b4c1-c455-4bde-b10f-1a46cfdc5808": {
+      "ProjectGuid": "f3a1b4c1-c455-4bde-b10f-1a46cfdc5808",
+      "DisplayName": "Delegate",
+      "ColorIndex": 3
+    },
+    "d2f96eac-890d-4f10-a610-ee9c6b58ebc6": {
+      "ProjectGuid": "d2f96eac-890d-4f10-a610-ee9c6b58ebc6",
+      "DisplayName": "Delegate",
+      "ColorIndex": 4
+    },
+    "13b9d119-c84c-473a-bfef-a4b5b9721438": {
+      "ProjectGuid": "13b9d119-c84c-473a-bfef-a4b5b9721438",
+      "DisplayName": "Delegate",
+      "ColorIndex": 5
     }
   },
-  "NextColorIndex": 3
+  "NextColorIndex": 6
 }

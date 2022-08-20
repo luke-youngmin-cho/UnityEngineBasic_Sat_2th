@@ -31,15 +31,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Example02_HorseRacing", "Ho
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClassInheritanceAndPolymorphism", "ClassInheritanceAndPolymorphism\ClassInheritanceAndPolymorphism.csproj", "{F40159D3-F903-4C26-AD8E-54C987FE21B6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Collections", "Collections\Collections.csproj", "{D866655F-53BE-4A38-B076-A3E3F6566259}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Collections", "Collections\Collections.csproj", "{D866655F-53BE-4A38-B076-A3E3F6566259}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example03_DynamicArray", "Example03_DynamicArray\Example03_DynamicArray.csproj", "{6DC87933-AED3-4B24-B89A-27AB6F4A88AF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Example03_DynamicArray", "Example03_DynamicArray\Example03_DynamicArray.csproj", "{6DC87933-AED3-4B24-B89A-27AB6F4A88AF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example04_MyLinkedList", "Example04_MyLinkedList\Example04_MyLinkedList.csproj", "{DC58A62F-DDD1-4EDB-A0CF-9EA156F453C6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Example04_MyLinkedList", "Example04_MyLinkedList\Example04_MyLinkedList.csproj", "{DC58A62F-DDD1-4EDB-A0CF-9EA156F453C6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example05_MyHashtable", "Example05_MyHashtable\Example05_MyHashtable.csproj", "{2B56838A-052D-4631-B0D5-746279113FD2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Example05_MyHashtable", "Example05_MyHashtable\Example05_MyHashtable.csproj", "{2B56838A-052D-4631-B0D5-746279113FD2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example06_RollADice", "Example06_RollADice\Example06_RollADice.csproj", "{DB4CAF84-8520-446B-8666-8CC5F0BCFAF9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Example06_RollADice", "Example06_RollADice\Example06_RollADice.csproj", "{DB4CAF84-8520-446B-8666-8CC5F0BCFAF9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Delegate", "Delegate\Delegate.csproj", "{13B9D119-C84C-473A-BFEF-A4B5B9721438}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -123,6 +125,10 @@ Global
 		{DB4CAF84-8520-446B-8666-8CC5F0BCFAF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DB4CAF84-8520-446B-8666-8CC5F0BCFAF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DB4CAF84-8520-446B-8666-8CC5F0BCFAF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13B9D119-C84C-473A-BFEF-A4B5B9721438}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13B9D119-C84C-473A-BFEF-A4B5B9721438}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13B9D119-C84C-473A-BFEF-A4B5B9721438}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13B9D119-C84C-473A-BFEF-A4B5B9721438}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
