@@ -2,24 +2,24 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class StateLadderUp : StateBase
+public class StateLadderDown : StateBase
 {
     private LadderDetector _ladderDetector;
     private GroundDetector _groundDetector;
     private Rigidbody2D _rb;
-    private CharacterBase _character;
+    private CharacterBase _characeter;
     private float _h => Input.GetAxis("Horizontal");
     private float _v => Input.GetAxisRaw("Vertical");
-    public StateLadderUp(StateMachine.StateType machineType, StateMachine machine) 
+    public StateLadderDown(StateMachine.StateType machineType, StateMachine machine) 
         : base(machineType, machine)
     {
         _ladderDetector = machine.GetComponent<LadderDetector>();
         _groundDetector = machine.GetComponent<GroundDetector>();
         _rb = machine.GetComponent<Rigidbody2D>();
-        _character = machine.GetComponent<CharacterBase>();
+        _characeter = machine.GetComponent<CharacterBase>();
     }
 
-    public override bool IsExecuteOK => _ladderDetector.CanGoUP &&
+    public override bool IsExecuteOK => _ladderDetector.CanGoDown &&
                                         (Machine.Current == StateMachine.StateType.Idle ||
                                          Machine.Current == StateMachine.StateType.Move ||
                                          Machine.Current == StateMachine.StateType.Jump ||
@@ -59,7 +59,7 @@ public class StateLadderUp : StateBase
                     AnimationManager.Play("Ladder");
                     Machine.StopMove();
                     _rb.velocity = Vector2.zero;
-                    _rb.position = _ladderDetector.UpBottomStartPos;
+                    _rb.position = _ladderDetector.DownTopStartPos;
                     MoveNext();
                 }
                 break;
@@ -71,28 +71,29 @@ public class StateLadderUp : StateBase
             case IState.Commands.OnAction:
                 {
                     AnimationManager.Speed = Mathf.Abs(_v);
-                    _rb.MovePosition(_rb.position + Vector2.up * _v * _character.MoveSpeed * Time.deltaTime);
+                    _rb.MovePosition(_rb.position + Vector2.up * _v * _characeter.MoveSpeed * Time.deltaTime);
 
                     // 사다리 위로 올라가는 조건
-                    if (_rb.position.y > _ladderDetector.UpTopEndPos.y)
+                    if (_rb.position.y > _ladderDetector.DownTopEndPos.y)
                     {
-                        _rb.position = _ladderDetector.UpTopPos;
+                        _rb.position = _ladderDetector.DownTopPos;
                         next = StateMachine.StateType.Idle;
                         MoveNext();
                     }
                     // 사다리 밑으로 떨어지는 조건
-                    else if (_rb.position.y < _ladderDetector.UpBottomEndPos.y)
-                    {
+                    else if (_rb.position.y < _ladderDetector.DownBottomEndPos.y)
+                    {                        
                         next = StateMachine.StateType.Idle;
                         MoveNext();
                     }
                     // 땅을 밟는 조건
-                    else if (_rb.position.y < _ladderDetector.UpBottomStartPos.y && 
+                    else if (_rb.position.y < _ladderDetector.DownBottomStartPos.y &&
                              _groundDetector.IsDetected)
                     {
                         next = StateMachine.StateType.Idle;
                         MoveNext();
                     }
+                                
 
                     // 점프
                     if (Input.GetKey(KeyCode.LeftAlt))
