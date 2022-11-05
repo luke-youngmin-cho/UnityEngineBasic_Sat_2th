@@ -34,8 +34,8 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
+  - Portal
+  - 3DObject
   - 
   m_SortingLayers:
   - name: Default
