@@ -13,8 +13,9 @@ public class GameManager : MonoBehaviour
         LoadLevelData,
         WaitUntilLevelDataLoaded,
         StartGame,
-        StartStage,
-        WaitUntilStageFinished,
+        LoadLevel,
+        WaitUntilLevelLoaded,
+        WaitUntilLevelFinished,
         LevelCleared,
         LevelFailed,
         WaitForUser
@@ -78,12 +79,18 @@ public class GameManager : MonoBehaviour
                     MoveNext();
                 }
                 break;
-            case GameStates.StartStage:
+            case GameStates.LoadLevel:
                 {
-
+                    Pathfinder.SetUpMap();
+                    MoveNext();
                 }
                 break;
-            case GameStates.WaitUntilStageFinished:
+            case GameStates.WaitUntilLevelLoaded:
+                {
+                    MoveNext();
+                }
+                break;
+            case GameStates.WaitUntilLevelFinished:
                 break;
             case GameStates.LevelCleared:
                 break;
