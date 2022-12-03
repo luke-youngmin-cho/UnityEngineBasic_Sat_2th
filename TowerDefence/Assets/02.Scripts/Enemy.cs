@@ -42,6 +42,10 @@ public class Enemy : MonoBehaviour
     [SerializeField] private float _speedOrigin = 2.0f;
 
 
+    public void Hurt(int damage)
+    {
+        Hp -= damage;
+    }
 
     public void Die()
     {
