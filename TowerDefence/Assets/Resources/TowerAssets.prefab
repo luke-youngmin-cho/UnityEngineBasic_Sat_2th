@@ -46,5 +46,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _towers:
   - {fileID: 2016897885, guid: c661ab6f29156124ba536a1a92c9fd80, type: 3}
+  - {fileID: 2016897885, guid: ffaa61f67e891474a876f72308414ace, type: 3}
+  - {fileID: 2016897885, guid: bf1e0add95c3d1c45a4147dd34b10da6, type: 3}
+  - {fileID: 419665640695108594, guid: 8c4d7899391d08541893307ad0b960bd, type: 3}
+  - {fileID: 419665640695108594, guid: d23be89bd515baa489f905dd6528b545, type: 3}
+  - {fileID: 419665640695108594, guid: 99bb61a53fce2eb45ba411e0df678f5d, type: 3}
+  - {fileID: 2531937935773305637, guid: 2f80b98772a22794081f1aebcaea6a0b, type: 3}
+  - {fileID: 2531937935773305637, guid: af15a51befb48f743911975b3754bcb1, type: 3}
+  - {fileID: 2531937935773305637, guid: 953e0ac37381da844b1186154913fe19, type: 3}
   _previewTowers:
   - {fileID: 2042990384713707260, guid: ef8c811d858d77d48b43643a14ce62f4, type: 3}
+  - {fileID: 2042990384713707260, guid: d77de3f6bfe846c4c8e63f9a92699704, type: 3}
+  - {fileID: 2042990384713707260, guid: cab4af03e9e88034592d625ff867c7c5, type: 3}

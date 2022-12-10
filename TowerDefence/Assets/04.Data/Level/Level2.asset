@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04e1bf2014850cc4f998726320f9d208, type: 3}
   m_Name: Level2
   m_EditorClassIdentifier: 
-  Level: 1
+  Level: 2
   LifeInit: 10
   MoneyInit: 5000
   StageDataList:

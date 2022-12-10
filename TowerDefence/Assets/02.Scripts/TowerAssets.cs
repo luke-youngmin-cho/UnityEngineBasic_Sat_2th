@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using System.Linq;
 public class TowerAssets : MonoBehaviour
 {
     private static TowerAssets _instance;
@@ -21,6 +21,12 @@ public class TowerAssets : MonoBehaviour
     public bool TryGetTower(TowerInfo info, out Tower tower)
     {
         tower = _towers.Find(t => t.Info.Equals(info));
+        return tower;
+    }
+
+    public bool TryGetNextLevelTower(TowerInfo info, out Tower tower)
+    {
+        tower = _towers.Find(t => (t.Info.Type == info.Type) && (t.Info.UpgradeLevel == info.UpgradeLevel + 1));
         return tower;
     }
 
