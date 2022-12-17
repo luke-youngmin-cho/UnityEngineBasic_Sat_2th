@@ -15,7 +15,25 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField] private GameObject _skipButtonPrefab;
     private List<GameObject> _skipButtons = new List<GameObject>();
     private int _currentStage;
-    
+    public bool IsFinished => (_currentStage >= Data.StageDataList.Count) && (_stageDataList.Count <= 0);
+    private int _totalSpawnedEnemy;
+    public int TotalSpawnedEnemy
+    {
+        get
+        {
+            return _totalSpawnedEnemy;
+        }
+        set
+        {
+            _totalSpawnedEnemy = value;
+
+            if (IsFinished && value <= 0)
+            {
+                GameManager.Instance.ClearLevel();
+            }
+        }
+    }
+
     public void SpawnNext()
     {
         _currentStage++;
@@ -84,7 +102,12 @@ public class EnemySpawner : MonoBehaviour
                                 ObjectPool.Instance.Spawn(_stageDataList[i].SpawnDataList[j].Prefab.name,
                                                           Paths.Instance.StartPointList[_stageDataList[i].SpawnDataList[j].SpawnPointIndex].position + _stageDataList[i].SpawnDataList[j].Prefab.transform.position + _offset);
 
-                            go.GetComponent<Enemy>().OnDie += () => ObjectPool.Instance.Return(go);
+                            TotalSpawnedEnemy++;
+                            go.GetComponent<Enemy>().OnDie += () =>
+                            {
+                                ObjectPool.Instance.Return(go);
+                                TotalSpawnedEnemy--;
+                            };
 
                             go.GetComponent<EnemyMove>().SetUp(Paths.Instance.StartPointList[_stageDataList[i].SpawnDataList[j].SpawnPointIndex],
                                                                Paths.Instance.EndPointList[_stageDataList[i].SpawnDataList[j].GoalPointIndex]);

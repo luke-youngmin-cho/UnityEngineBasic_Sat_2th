@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class SuccessStar : MonoBehaviour
 {
-    [SerializeField] private Animation _anim;
+    [SerializeField] private Animator _animator;
     public void Show()
     {
-        _anim.Play();
+        gameObject.SetActive(true);
+        _animator.Play("Star");
     }
 }

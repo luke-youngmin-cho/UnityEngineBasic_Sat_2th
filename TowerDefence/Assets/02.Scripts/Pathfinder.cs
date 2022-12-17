@@ -191,7 +191,7 @@ public class Pathfinder : MonoBehaviour
     {
         bool isFound = false;
         _visited[start.Y, start.X] = true;
-        Debug.Log($"DFS ing... {start.X}, {start.Y}");
+        //Debug.Log($"DFS ing... {start.X}, {start.Y}");
 
         Coord next;
         for (int i = 0; i < _direction.GetLength(1); i++)

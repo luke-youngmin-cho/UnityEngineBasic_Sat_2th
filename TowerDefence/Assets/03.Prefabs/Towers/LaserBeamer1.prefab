@@ -203,7 +203,7 @@ MonoBehaviour:
   _beam: {fileID: 71775450690321262}
   _beamHitEffect: {fileID: 1146962666510343214}
   _firePoint: {fileID: 4550305929720595786}
-  _damage: 3
+  _damage: 2
   _damageChargeTime: 1
   _damageGain: 3
   _damagePeriod: 0.2
