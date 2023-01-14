@@ -17,6 +17,7 @@ public class EnemyStateMove : CharacterStateBase
         animator.SetBool("doMove", true);
     }
 
+
     public override void Stop()
     {
         base.Stop();

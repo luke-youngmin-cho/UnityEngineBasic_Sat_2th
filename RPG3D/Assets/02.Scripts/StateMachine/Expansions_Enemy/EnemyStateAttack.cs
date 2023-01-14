@@ -13,17 +13,21 @@ public class EnemyStateAttack : CharacterStateBase
     {
         base.Execute();
         animator.SetBool("doAttack", true);
+        Debug.Log("DoAttack");
+
     }
 
     public override void Stop()
     {
         base.Stop();
         animator.SetBool("doAttack", false);
+        Debug.Log("StopAttack");
     }
 
     public override int Update()
     {
-        if (animator.GetNormalizedTime() > 0.95f)
+        if (animator.GetNormalizedTime() > 0.95f &&
+            animator.isPreviousStateFinished)
             return base.Update();
 
         return id;

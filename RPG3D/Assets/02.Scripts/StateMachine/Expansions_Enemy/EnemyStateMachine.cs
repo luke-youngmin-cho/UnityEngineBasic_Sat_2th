@@ -42,5 +42,11 @@ public class EnemyStateMachine : CharacterStateMachine
                                               )
                                           });
         states.Add(StateType.Attack, attack);
+
+        IState die = new EnemyStateDie(id: (int)StateType.Die,
+                                       owner: owner,
+                                       executeCondition: () => true,
+                                       transitions: new List<KeyValuePair<Func<bool>, int>>());
+        states.Add(StateType.Die, die);
     }
 }
